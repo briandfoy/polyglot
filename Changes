@@ -1,6 +1,9 @@
 # $Id$
 Revision history for Perl extension Polyglot.
 
+0.10 - Wed Sep 15 21:27:01 2004
+* cleaned up the distro: no need to upgrade
+
 0.07 - Mon Jan 20 21:54:29 2003
 	* first release of my toy little language interpreter
 	* this is not even Alpha software, and lots of things are
