@@ -1,0 +1,9 @@
+.cvsignore
+.releaserc
+.lwpcookies
+Polyglot-.*
+CVS
+blib
+.*bak
+Makefile$
+MANIFEST.SKIP
