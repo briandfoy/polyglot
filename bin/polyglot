@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+use strict;
+
+use Polyglot;
+use vars qw( $polyglot );
+
+$polyglot = Polyglot->new();
+
+while( <> )
+	{
+	next if /^\s*$/;
+	next if /^\s*#/;
+	
+	last;
+	}
+
+unless( /^POLYGLOT/i )
+	{
+	die "First line of $ARGV[1] is not POLYGLOT\n";
+	}
+	
+unless( /POLYGLOT\s+([\w:]+)/i )
+	{
+	die "POLYGLOT line did not specify a package\n";
+	}
+
+eval "require $1";
+
+#die "Could not load Polyglot package [$1]\n" unless;
+	
+$polyglot->run;
