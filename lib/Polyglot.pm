@@ -146,7 +146,7 @@ state.
 
 =cut
 
-sub state  { 'state' }
+sub state ()  { 'state' }
 
 =item action
 
@@ -154,7 +154,7 @@ Returns the string used to mark a directive that performs an action.
 
 =cut
 
-sub action { 'action' }
+sub action () { 'action' }
 
 
 =item add( DIRECTIVE, TYPE, CODEREF, INITIAL_VALUE, HELP )
@@ -272,6 +272,11 @@ sub add_toggle
 	$self;
 	}
 
+=item help
+
+Returns a help message: you want to override this.
+
+=cut
 
 sub help
 	{
@@ -352,7 +357,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>.
 
 =head1 COPYRIGHT and LICENSE
 
-Copyright 2004, brian d foy, All rights reserved
+Copyright 2002-2005, brian d foy, All rights reserved
 
 This software is available under the same terms as perl.
 
