@@ -7,3 +7,4 @@ blib
 .*bak
 Makefile$
 MANIFEST.SKIP
+\.DS_Store
