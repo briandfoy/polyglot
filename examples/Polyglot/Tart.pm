@@ -1,3 +1,11 @@
+package Polyglot::Tart;
+
+use vars qw($VERSION);
+
+$VERSION = 0.10;
+
+package Polyglot;
+
 print "Loaded Tart\n";
 
 map { $polyglot->add_state( $_ ) } qw( FATAL REFERER VERBOSE STICKY CONTENT_TYPE );
