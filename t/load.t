@@ -1,6 +1,5 @@
 # $Id$
 BEGIN {
-	use File::Find::Rule;
 	@classes = qw(Polyglot);
 	}
 

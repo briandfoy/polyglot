@@ -1,3 +1,4 @@
+# $Id$
 load.t
 pod.t
-toggle.t
+prereq.t
