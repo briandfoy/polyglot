@@ -56,7 +56,7 @@ use autouse 'Data::Dumper' => 'Dumper';
 use Carp qw(carp);
 use Text::ParseWords qw( quotewords );
 
-$VERSION = '0.11';
+$VERSION = '0.12';
 
 my $Debug = $ENV{DEBUG} || 0;
 
@@ -357,7 +357,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>.
 
 =head1 COPYRIGHT and LICENSE
 
-Copyright 2002-2005, brian d foy, All rights reserved
+Copyright 2002-2006, brian d foy, All rights reserved
 
 This software is available under the same terms as perl.
 

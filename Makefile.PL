@@ -1,20 +1,8 @@
 # $Id$
 use ExtUtils::MakeMaker;
 
-eval "use Test::Manifest";
+eval "use Test::Manifest 1.14";
 
-unless( $@ )
-	{
-	*ExtUtils::MM_Any::test_via_harness = sub
-		{
-		my($self, $perl, $tests) = @_;
-		
-		return qq|\t$perl "-MTest::Manifest" | .
-			qq|"-e" "run_t_manifest(\$(TEST_VERBOSE), '\$(INST_LIB)', | .
-			qq|'\$(INST_ARCHLIB)')"\n|;
-		}
-	}
-	
 WriteMakefile(
     'NAME'		    => 'Polyglot',
     'VERSION_FROM'	=> 'lib/Polyglot.pm',
