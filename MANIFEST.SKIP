@@ -6,5 +6,6 @@ CVS
 blib
 .*bak
 Makefile$
+Makefile.old$
 MANIFEST.SKIP
 \.DS_Store
