@@ -3,6 +3,7 @@ Changes
 examples/itunes.pg
 examples/Polyglot/iTunes.pm
 examples/Polyglot/Tart.pm
+examples/README
 examples/tart.pg
 lib/Polyglot.pm
 LICENSE
