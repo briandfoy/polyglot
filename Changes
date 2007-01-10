@@ -1,6 +1,10 @@
 # $Id$
 Revision history for Perl extension Polyglot.
 
+0.13 - Tue Jan  9 22:42:05 2007
+	* updated copyright and license info
+	* no code changes, so no need to upgrade
+
 0.12 - Thu Jun  8 06:42:53 2006
 	* distro cleanups. No need to upgrade.
 
