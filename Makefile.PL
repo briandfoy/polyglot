@@ -6,7 +6,9 @@ eval "use Test::Manifest 1.14";
 WriteMakefile(
     'NAME'		    => 'Polyglot',
     'VERSION_FROM'	=> 'lib/Polyglot.pm',
-	'LICENSE'       => 'perl',
+	'LICENSE'      => 'perl',
+	'AUTHOR'       => 'brian d foy <bdfoy@cpan.org>',
+	
 
     'PREREQ_PM'		=> {
 		'Test::More'       => '0',
