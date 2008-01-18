@@ -3,6 +3,9 @@ package Polyglot;
 use strict;
 use vars qw($VERSION);
 
+use warnings;
+no warnings;
+
 =head1 NAME
 
 Polyglot - a little language interpreter
@@ -56,7 +59,7 @@ use autouse 'Data::Dumper' => 'Dumper';
 use Carp qw(carp);
 use Text::ParseWords qw( quotewords );
 
-$VERSION = '0.13';
+$VERSION = '0.14';
 
 my $Debug = $ENV{DEBUG} || 0;
 
@@ -357,7 +360,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2002-2007 brian d foy.  All rights reserved.
+Copyright (c) 2002-2008 brian d foy.  All rights reserved.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
