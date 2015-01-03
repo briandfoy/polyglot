@@ -1,4 +1,3 @@
-# $Id$
 package Polyglot;
 use strict;
 use vars qw($VERSION);
