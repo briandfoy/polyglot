@@ -1,14 +1,17 @@
-require 5.006;
+require 5.008;
 use strict;
 use warnings;
 
-my $github    = 'https://github.com/briandfoy/';
-my $main_file = 'lib/';
+use File::Spec::Functions qw(catfile);
+
+my $module    = 'Polyglot';
+my $github    = 'https://github.com/briandfoy/Polyglot';
+my $main_file = catfile( 'lib', split /::/, "$module.pm" );
 
 my %WriteMakefile = (
-    'NAME'		    => 'Polyglot',
+    'NAME'		    => $module,
 	'ABSTRACT_FROM' => $main_file,
-	'VERSION_FROM'	=> 'lib/Polyglot.pm',
+	'VERSION_FROM'	=> $main_file,
 	'LICENSE'       => 'perl',
 	'AUTHOR'        => 'brian d foy <bdfoy@cpan.org>',
 
@@ -40,13 +43,6 @@ my %WriteMakefile = (
 			homepage => $github,
 			},
 		},
-    'PREREQ_PM'		=> {
-		'Test::More'       => '0',
-    	},
-
-    'MAN3PODS'      => {
-    	'lib/Polyglot.pm'  => '$(INST_MAN3DIR)/Polyglot.3',
-    	},
 
     'clean' => { FILES => 'Polyglot-*' },
 	);
