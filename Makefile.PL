@@ -47,7 +47,7 @@ my %WriteMakefile = (
 			},
 		},
 
-    'clean' => { FILES => 'Polyglot-*' },
+	clean => { FILES => "$dist-*" },
 	);
 
 sub arguments { \%WriteMakefile }
