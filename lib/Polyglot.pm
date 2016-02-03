@@ -60,7 +60,7 @@ use autouse 'Data::Dumper' => 'Dumper';
 use Carp qw(carp);
 use Text::ParseWords qw( quotewords );
 
-$VERSION = '0.14';
+$VERSION = '1.001';
 
 my $Debug = $ENV{DEBUG} || 0;
 
