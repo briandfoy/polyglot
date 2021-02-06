@@ -5,7 +5,15 @@ on:
         branches:
             - '*'
         tags-ignore:
-            - '*'
+            - 'release-*'
+        paths-ignore:
+            - '.appveyor.yml'
+            - '.github/**'
+            - '.gitignore'
+            - '.releaserc'
+            - 'Changes'
+            - 'LICENSE'
+            - 'README.pod'
         pull_request:
 
 jobs:
