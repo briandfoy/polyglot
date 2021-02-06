@@ -333,7 +333,7 @@ Displays the help message for DIRECTIVE
 
 =head1 TO DO
 
-* i should really make all of these methods class methods that
+* I should really make all of these methods class methods that
 access a Singleton object stored as class data.
 
 =head1 SOURCE AVAILABILITY
