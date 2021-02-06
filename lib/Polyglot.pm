@@ -1,3 +1,5 @@
+use 5.008;
+
 package Polyglot;
 use strict;
 use vars qw($VERSION);
