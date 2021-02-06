@@ -43,7 +43,7 @@ jobs:
             - name: Run parallel tests
               run: |
                 perl Makefile.PL
-                HARNESS_OPTION=j10 make test
+                HARNESS_OPTIONS=j10 make test
             - name: Run dist tests
               run: |
                 perl Makefile.PL
